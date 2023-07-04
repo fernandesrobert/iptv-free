@@ -22,7 +22,7 @@ snmp traps cpu-core
 snmp traps cpu-load
 snmp traps link-status
 snmp traps login-success
-snmp agent disabled
+snmp agent enabled
 snmp agent version v2c
 snmp agent version v3
 snmp community m0n1t0r@-Nb$
@@ -299,6 +299,7 @@ vrf mgmt
 router static
  address-family ipv4
   0.0.0.0/0 next-hop 172.26.6.153
+  interface l3-MGMT
   !
  !
 !
